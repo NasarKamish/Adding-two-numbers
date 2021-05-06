@@ -16,7 +16,9 @@ def add():
 def clear():
     en_First.delete(0, END)
     en_Second.delete(0, END)
+    en_Answer.config(state="normal")
     en_Answer.delete(0, END)
+    en_Answer.config(state="readonly")
 
 
 addition = StringVar()
